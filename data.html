@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="navigation">
+        <button onclick="window.location.href='create_std.html';">Create Student</button>
+        <button onclick="window.location.href='subjects.html';">Assign Subjects</button>
+    </div>
+
+    <h2>Student Data</h2>
+    <div id="student-filter-container">
+        <label for="student-filter">Filter by Student:</label>
+        <select id="student-filter" onchange="studentManager.filterStudentData()"></select>
+    </div>
+    <div id="students-table-container"></div>
+    <button onclick="studentManager.clearAllData()">Clear All Data</button>
+</body>
+</html>
+

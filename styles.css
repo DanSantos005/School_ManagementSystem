@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin-right: 20vh;
+  margin-left: 20vh;
+  color: #333;
+}
+
+/* Navigation */
+.navigation {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.navigation button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block; /* Ensures buttons are side by side */
+}
+
+.navigation button:hover {
+  background-color: #0056b3;
+}
+
+/* Card Container */
+.card {
+  display: block;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Containers */
+.form-container,
+.filter-container,
+#students-table-container,
+#student-card-container,
+#assign-subjects-form {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form and Inputs */
+form, #student-filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 60%; /* Medium size for better aesthetics */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"],
+button[type="button"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  background-color: #218838;
+}
+
+/* Headings */
+h2, h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Label Styles */
+label {
+  display: block;
+  margin: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Adjusting Checkboxes */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="number"],
+  select {
+      width: 80%; /* Increase size for smaller screens */
+  }
+
+  .navigation button {
+      padding: 10px 15px; /* Adjust button size for better usability on mobile */
+  }
+}
+

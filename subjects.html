@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>Assign Subjects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <button onclick="window.location.href='create_std.html';">Create Student</button>
+        <button onclick="window.location.href='data.html';">Student Data</button>
+    </div>
+
+    <h2>Assign Subjects</h2>
+    <form id="assign-subjects-form">
+        <label for="student-list">Select a student:</label>
+        <select id="student-list"></select>
+        <h3>Select subjects to assign:</h3>
+        <label><input type="checkbox" name="subjects" value="Math"> Math</label>
+        <label><input type="checkbox" name="subjects" value="History"> History</label>
+        <label><input type="checkbox" name="subjects" value="English"> English</label>
+        <label><input type="checkbox" name="subjects" value="Coding"> Coding</label>
+        <label><input type="checkbox" name="subjects" value="Science"> Science</label>
+        <button type="button" onclick="assignSubjects()">Assign Subjects</button>
+    </form>
+</body>
+</html>
